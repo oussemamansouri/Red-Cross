@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="fonction.js"></script>
+	<style type="text/css">  
+
+*{ margin: 0 ; padding: 0 ; }
+a{ color: black;  text-decoration: none;  }
+a:hover{ color: black; text-decoration: none; }
+.cc:hover{  background-color: white; color: white;    }
+
+td {   border-radius: 20px ;        }
+</style>
+
+	<title>menu</title>
+</head>
+<body text="WHITE" bgcolor="#6C6C6B" style="max-height: 3px;" >
+
+<table align="right" border="0"  width="100%" height="10" >
+<tr>	
+<td align="left"><a  href="home.html" target="home"><img src="image\home.png" width="35" height="25"></a></td>
+<td align="center"class="cc" ><b> <a href="evenement.html" target="home" > EVENEMENT </a></b></td>	
+<td align="center" class="cc" ><b>  <a href="information.html" target="home" > INFORMATION </a></b></td>
+<td align="center"class="cc" ><b> <a href="membres.html" target="home"  > LES MEMBRES </a></b></td>
+<td  align="center" width="30%" ><b> 
+	<form name="forme1" method="POST" target="home" action="momber.php" onsubmit=" return verif(forme1)" >  <input placeholder="Password" type="password" name="log" size="20">
+	 <input type="submit" size="10" name="b"  value="login" > </form>
+</b></td>
+
+</tr>	
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	 <link rel="stylesheet" type="text/css" href="membres.css">
+	<script type="text/javascript"  src="fonction.js"></script>
+	<style type="text/css">
+		*{ margin: 0; padding: 0; font-size: 16px; }
+		h1{ font-size: 50px     }
+		body{ background-position: center; background-size: cover; font-family: sans-serif;}
+	    .form-box{ width: 700px; background: rgba(0,0,0,0.8); margin: 12% auto ; padding: 50px 0 ;color: #fff; box-shadow: 0 0 20px 2px rgba(0,0,0,0.5) ;       }
+	</style>
+	<meta charset="utf-8">
+	<title>forme</title>
+</head>
+<body  background="image\BACK2.jpg">
+
+<div class="form-box" >   <h1 align="center" >Inscription</h1><br><br>
+<form method="POST" action="insecription.php" name= "forme2" onsubmit="return verif2(forme2)" > 
+
+<table border="0" align="center" cellspacing="20" >
+
+<tr><td>Nom</td><td><input type="text" name="nom" size="20">*</td></tr>	
+<tr><td>Prenom</td><td><input type="text" name="prenom" size="20">*</td></tr>	
+<tr><td>Email</td><td><input type="email" name="email" size="20">*</td></tr>	
+
+<tr><td>Vous etes valontaire du Croissant Rouge Tunosien ?</td><td><input type="radio" name="valon" checked="" value="oui"> OUI <input type="radio" name="valon" value="no"> NON </td></tr>	
+
+<tr><td>Date de naissance</td><td><input type="date" name="date" size="20">*</td></tr>
+<tr><td>Téléphone</td><td><input type="text" name="tel" size="20">*</td></tr>	
+<tr><td>Sexe</td><td><input type="radio" name="sexe" checked="" value="H"> Homme <input type="radio" name="sexe" value="F"> Femme </td></tr>	
+<tr><td>Pays </td><td><input type="text" name="pays" size="20">*</td></tr>	
+<tr><td>Section </td><td><input type="radio" name="section" checked="" value="SI"> SI <input type="radio" name="section" value="EEA"> EEA <input type="radio" name="section" value="ISI">ISI <input type="radio" name="section" value="TIC" > TIC </td></tr>	
+
+<tr><td>Niveau</td><td><input type="radio" name="niveau" checked="" value="1"> 1 <input type="radio" name="niveau" value="2"> 2 <input type="radio" name="niveau" value="3"> 3 <input type="radio" name="niveau" value="4"> 1 master <input type="radio" name="niveau" value="5"> 2 master </td></tr>	
+ 
+<tr><td>Que savez vous du croissant rouge ?</td><td><textarea rows="2" cols="21" name="Q1" ></textarea>*</td></tr>	
+
+
+<tr><td>Etres vous actifs dans des autres clubs ?</td><td><input type="radio" name="actif" checked="" value="oui"> OUI <input type="radio" name="actif" value="no"> NON </td></tr>	
+
+<tr><td>Lien Facebook </td><td><input type="text" name="fb" size="20">*</td></tr>
+
+<tr><td></td><td><input   type="submit" name="b1" size="20" value="Envoyer"> <input type="reset" name="b2" size="20" value="Annuler"></td></tr>	
+
+</table><br>
+
+</form>
+
+<button style="margin-left: 60px ; border-radius: 15px; width: 150px; height: 40px;  " class="button1" >revenir</button>
+
+</div>
+
+</body>
+</html>
